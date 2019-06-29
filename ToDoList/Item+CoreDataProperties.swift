@@ -12,7 +12,10 @@ import CoreData
 
 extension Item {
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Item> {
-        return NSFetchRequest<Item>(entityName: "Item")
+        let request = NSFetchRequest<Item>(entityName: "Item")
+        request.sortDescriptors = [NSSortDescriptor(key: "text", ascending: true)]
+        
+        return request
     }
 
     @NSManaged public var text: String
