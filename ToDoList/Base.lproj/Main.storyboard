@@ -36,7 +36,7 @@
                     <navigationItem key="navigationItem" id="9BV-FY-TBV">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hZe-uM-Lo2">
                             <connections>
-                                <segue destination="1Rl-aT-mVT" kind="presentation" id="19c-QY-3zA"/>
+                                <segue destination="1Rl-aT-mVT" kind="presentation" identifier="newItem" id="19c-QY-3zA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

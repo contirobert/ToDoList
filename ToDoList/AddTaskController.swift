@@ -11,7 +11,7 @@ import CoreData
 
 class AddTaskController: UIViewController {
 
-    let managedObjectContext = CoreDataStack().managedObjectContext
+    var managedObjectContext: NSManagedObjectContext!
     @IBOutlet weak var textField: UITextField!
         
     override func viewDidLoad() {
