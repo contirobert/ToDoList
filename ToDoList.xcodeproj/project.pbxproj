@@ -19,6 +19,7 @@
 		C5D5BDFE22C81090000E4C32 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D5BDFC22C8108F000E4C32 /* Item+CoreDataProperties.swift */; };
 		C5D5BE0022C81D66000E4C32 /* ToDoFetchedResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D5BDFF22C81D66000E4C32 /* ToDoFetchedResultsController.swift */; };
 		C5D5BE0222C82266000E4C32 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D5BE0122C82266000E4C32 /* DetailViewController.swift */; };
+		C5D5BE0422C82E91000E4C32 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D5BE0322C82E91000E4C32 /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C5D5BDFC22C8108F000E4C32 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C5D5BDFF22C81D66000E4C32 /* ToDoFetchedResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoFetchedResultsController.swift; sourceTree = "<group>"; };
 		C5D5BE0122C82266000E4C32 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C5D5BE0322C82E91000E4C32 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				C5D5BDF722C80D03000E4C32 /* ToDoListController.swift */,
 				C5D5BDF922C80E77000E4C32 /* AddTaskController.swift */,
 				C5D5BE0122C82266000E4C32 /* DetailViewController.swift */,
+				C5D5BE0322C82E91000E4C32 /* DataSource.swift */,
 				C5D5BDFF22C81D66000E4C32 /* ToDoFetchedResultsController.swift */,
 				C5D5BDF222C802E1000E4C32 /* CoreDataStack.swift */,
 				C5D5BDE422C80237000E4C32 /* Main.storyboard */,
@@ -164,6 +167,7 @@
 				C5D5BE0022C81D66000E4C32 /* ToDoFetchedResultsController.swift in Sources */,
 				C5D5BDF322C802E1000E4C32 /* CoreDataStack.swift in Sources */,
 				C5D5BDE122C80237000E4C32 /* AppDelegate.swift in Sources */,
+				C5D5BE0422C82E91000E4C32 /* DataSource.swift in Sources */,
 				C5D5BDF622C80B0B000E4C32 /* ToDoList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
