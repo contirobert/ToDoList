@@ -26,6 +26,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="TpR-t6-PA9" kind="show" identifier="showDetail" id="Ny8-V0-hwp"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -123,6 +126,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x9l-v4-84E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2750.7246376811595" y="138.61607142857142"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="f8E-ca-i5p">
+            <objects>
+                <viewController id="TpR-t6-PA9" customClass="DetailViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BC6-MG-UtZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ea2-Jn-DJA">
+                                <rect key="frame" x="16" y="433" width="382" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sO7-YQ-diK">
+                                <rect key="frame" x="0.0" y="840" width="414" height="56"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="cxr-81-Ira"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteItem:" destination="TpR-t6-PA9" eventType="touchUpInside" id="ALN-cv-xvl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sO7-YQ-diK" firstAttribute="leading" secondItem="yvt-t4-nBf" secondAttribute="leading" id="EHk-PW-htC"/>
+                            <constraint firstItem="ea2-Jn-DJA" firstAttribute="centerY" secondItem="BC6-MG-UtZ" secondAttribute="centerY" id="M5x-35-Cgt"/>
+                            <constraint firstAttribute="bottom" secondItem="sO7-YQ-diK" secondAttribute="bottom" id="Wa7-5L-GgI"/>
+                            <constraint firstItem="yvt-t4-nBf" firstAttribute="trailing" secondItem="sO7-YQ-diK" secondAttribute="trailing" id="X7D-Ys-05a"/>
+                            <constraint firstItem="ea2-Jn-DJA" firstAttribute="leading" secondItem="yvt-t4-nBf" secondAttribute="leading" constant="16" id="c52-JQ-Qft"/>
+                            <constraint firstItem="yvt-t4-nBf" firstAttribute="trailing" secondItem="ea2-Jn-DJA" secondAttribute="trailing" constant="16" id="uVW-fF-CoV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yvt-t4-nBf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2y8-bz-0NE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="AAV-Y8-7wl">
+                            <connections>
+                                <action selector="save:" destination="TpR-t6-PA9" id="iAE-hO-axQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="detailTextField" destination="ea2-Jn-DJA" id="eHy-r7-Y4e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h2d-KA-uPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2751" y="873"/>
         </scene>
     </scenes>
 </document>

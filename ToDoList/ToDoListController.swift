@@ -66,6 +66,14 @@ class ToDoListController: UITableViewController {
             let addTaskController = navigationController.topViewController as! AddTaskController
             
             addTaskController.managedObjectContext = self.managedObjectContext
+        } else if segue.identifier == "showDetail" {
+            guard let detailViewController = segue.destination as? DetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
+                return
+            }
+            
+            let item = fetchedResultsController.object(at: indexPath)
+            detailViewController.item = item
+            detailViewController.context = self.managedObjectContext
         }
     }
 }
