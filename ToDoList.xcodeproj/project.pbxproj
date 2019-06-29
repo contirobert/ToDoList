@@ -67,17 +67,17 @@
 			isa = PBXGroup;
 			children = (
 				C5D5BDE022C80237000E4C32 /* AppDelegate.swift */,
-				C5D5BDF222C802E1000E4C32 /* CoreDataStack.swift */,
-				C5D5BDE422C80237000E4C32 /* Main.storyboard */,
-				C5D5BDE722C80239000E4C32 /* Assets.xcassets */,
-				C5D5BDE922C80239000E4C32 /* LaunchScreen.storyboard */,
-				C5D5BDEC22C80239000E4C32 /* Info.plist */,
-				C5D5BDF422C80B0B000E4C32 /* ToDoList.xcdatamodeld */,
 				C5D5BDF722C80D03000E4C32 /* ToDoListController.swift */,
 				C5D5BDF922C80E77000E4C32 /* AddTaskController.swift */,
+				C5D5BDFF22C81D66000E4C32 /* ToDoFetchedResultsController.swift */,
+				C5D5BDF222C802E1000E4C32 /* CoreDataStack.swift */,
+				C5D5BDE422C80237000E4C32 /* Main.storyboard */,
+				C5D5BDE922C80239000E4C32 /* LaunchScreen.storyboard */,
+				C5D5BDF422C80B0B000E4C32 /* ToDoList.xcdatamodeld */,
 				C5D5BDFB22C8108F000E4C32 /* Item+CoreDataClass.swift */,
 				C5D5BDFC22C8108F000E4C32 /* Item+CoreDataProperties.swift */,
-				C5D5BDFF22C81D66000E4C32 /* ToDoFetchedResultsController.swift */,
+				C5D5BDEC22C80239000E4C32 /* Info.plist */,
+				C5D5BDE722C80239000E4C32 /* Assets.xcassets */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
