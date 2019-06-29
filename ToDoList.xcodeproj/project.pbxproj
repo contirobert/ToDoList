@@ -17,6 +17,7 @@
 		C5D5BDFA22C80E77000E4C32 /* AddTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D5BDF922C80E77000E4C32 /* AddTaskController.swift */; };
 		C5D5BDFD22C8108F000E4C32 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D5BDFB22C8108F000E4C32 /* Item+CoreDataClass.swift */; };
 		C5D5BDFE22C81090000E4C32 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D5BDFC22C8108F000E4C32 /* Item+CoreDataProperties.swift */; };
+		C5D5BE0022C81D66000E4C32 /* ToDoFetchedResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D5BDFF22C81D66000E4C32 /* ToDoFetchedResultsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C5D5BDF922C80E77000E4C32 /* AddTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskController.swift; sourceTree = "<group>"; };
 		C5D5BDFB22C8108F000E4C32 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C5D5BDFC22C8108F000E4C32 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C5D5BDFF22C81D66000E4C32 /* ToDoFetchedResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoFetchedResultsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				C5D5BDF922C80E77000E4C32 /* AddTaskController.swift */,
 				C5D5BDFB22C8108F000E4C32 /* Item+CoreDataClass.swift */,
 				C5D5BDFC22C8108F000E4C32 /* Item+CoreDataProperties.swift */,
+				C5D5BDFF22C81D66000E4C32 /* ToDoFetchedResultsController.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				C5D5BDFD22C8108F000E4C32 /* Item+CoreDataClass.swift in Sources */,
 				C5D5BDF822C80D03000E4C32 /* ToDoListController.swift in Sources */,
 				C5D5BDFA22C80E77000E4C32 /* AddTaskController.swift in Sources */,
+				C5D5BE0022C81D66000E4C32 /* ToDoFetchedResultsController.swift in Sources */,
 				C5D5BDF322C802E1000E4C32 /* CoreDataStack.swift in Sources */,
 				C5D5BDE122C80237000E4C32 /* AppDelegate.swift in Sources */,
 				C5D5BDF622C80B0B000E4C32 /* ToDoList.xcdatamodeld in Sources */,

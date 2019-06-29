@@ -13,23 +13,12 @@ class ToDoListController: UITableViewController {
     
     let managedObjectContext = CoreDataStack().managedObjectContext
     
-    lazy var fetchedResultsController: NSFetchedResultsController<Item> = {
-        let request: NSFetchRequest<Item> = Item.fetchRequest()
-        let controller = NSFetchedResultsController(fetchRequest: request, managedObjectContext: self.managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
-        
-        return controller
+    lazy var fetchedResultsController: ToDoFetchedResultsController = {
+        return ToDoFetchedResultsController(managedObjectContext: self.managedObjectContext, tableView: self.tableView)
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        fetchedResultsController.delegate = self
-
-        do {
-            try fetchedResultsController.performFetch()
-        } catch {
-            print("Error fetching Item objects: \(error.localizedDescription)")
-        }
     }
 
     // MARK: - Table view data source
@@ -66,11 +55,5 @@ class ToDoListController: UITableViewController {
             
             addTaskController.managedObjectContext = self.managedObjectContext
         }
-    }
-}
-
-extension ToDoListController: NSFetchedResultsControllerDelegate {
-    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        tableView.reloadData()
     }
 }
